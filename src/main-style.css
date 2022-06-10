@@ -1,0 +1,66 @@
+:root {
+    --link-color: rgb(240, 248, 255, 0.25);
+}
+
+body {
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr) 4fr;
+    height: 100%;
+}
+
+#sidebar {
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+
+#sidebar ul {
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    list-style: none;
+    padding: 8px 0;
+    margin: 0 5px;
+}
+
+#sidebar ul:first-child {
+    border-bottom: 1px solid grey;
+}
+
+#sidebar li {
+    width: 100%;
+    display: flex;
+}
+
+#sidebar ul li a {
+    flex-grow: 1;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+#sidebar img{
+    max-width: 20px;
+}
+
+#sidebar a:hover {
+    background-color: var(--link-color)
+}
+
+#sidebar a:focus {
+    background-color: var(--link-color);
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
